@@ -1,0 +1,275 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background-color: #ffffff;
+    overflow: hidden;
+    font-size: 18px;
+    height: fit-content;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: -8px;
+}
+
+.navbar .brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo {
+    height: 80px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-left: auto;
+}
+
+.navbar .nav-links li {
+    margin: 0;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    padding: 14px 10px;
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.navbar .nav-links a i {
+    display: flex;
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid rgb(9, 0, 0);
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure links in nav-links remain black */
+.navbar .nav-links a {
+    color: #000000;
+}
+
+.image-section {
+    position: relative;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 4px;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 70px;
+    left: 3%;
+    background-image: linear-gradient(to right, rgba(1, 0, 0, 1), rgba(126, 124, 124, 1));
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    width: 320px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-title {
+    font-size: 28px;
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    font-weight: 500;
+}
+
+.description-container {
+    background-color: #a5a3a3aa;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -0.5%;
+}
+
+.description-container p {
+    width: 26%;
+    margin: 30px;
+    font-family: 'Times New Roman', serif;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    color: #000;
+}
+
+.horizontal-images {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    flex: 1;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container img {
+    width: 85%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.image-info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.image-info p {
+    margin: 5px 0;
+    font-size: 18px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+}
+
+.button {
+    display: inline-block;
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #000000;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar .nav-links li {
+        width: 100%;
+    }
+
+    .navbar .nav-links a {
+        text-align: left;
+        padding: 10px 15px;
+    }
+
+    .image-section img {
+        max-height: 400px;
+    }
+
+    .text-overlay {
+        bottom: 20px;
+        width: auto;
+        height: auto;
+        padding: 5px 10px;
+    }
+
+    .description-container p {
+        width: 80%;
+    }
+
+    .horizontal-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .image-container img {
+        width: 90%;
+    }
+
+    .image-info h3 {
+        text-align: center;
+        margin: 0;
+    }
+
+    .image-info p {
+        text-align: center;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .container {
+        padding: 0 10px;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .nav-links li {
+        width: 100%;
+    }
+
+    .navbar .nav-links a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .text-title {
+        font-size: 20px;
+    }
+
+    .text-overlay {
+        bottom: 10px;
+        padding: 5px;
+    }
+
+    .description-container p {
+        width: 100%;
+        margin: 15px;
+        font-size: 16px;
+    }
+
+    .image-container img {
+        width: 100%;
+    }
+
+    .image-info h3 {
+        font-size: 20px;
+    }
+
+    .image-info p {
+        font-size: 16px;
+    }
+}
